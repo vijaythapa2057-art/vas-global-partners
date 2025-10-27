@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO OPTIMIZATION: Critical for search ranking and click-through rate -->
-    <title>VAS Global Partners | Accounting Outsourcing, CA/ACCA Bookkeeping & Tax Services</title>
+    <!-- SEO OPTIMIZATION: Critical for search ranking and click-through rate --><title>VAS Global Partners | Accounting Outsourcing, CA/ACCA Bookkeeping & Tax Services</title>
     <meta name="description" content="Scale your firm with VAS Global Partners. We provide expert, vetted CA/ACCA-qualified accounting outsourcing for bookkeeping, tax, and financial reporting globally. High quality, 24/7 service.">
     
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons for aesthetic vectors -->
-    <script type="module">
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors --><script type="module">
       import { createIcons, Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
       createIcons({ icons: { Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock } });
     </script>
@@ -58,53 +55,40 @@
 </head>
 <body class="text-gray-800 bg-gray-50">
 
-    <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <!-- Header & Navigation --><header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo & Brand Name -->
-                <a href="#home" class="flex items-center space-x-3">
-                    <!-- LOGO SOURCE UPDATED TO img.png -->
+                <!-- Logo ONLY (Company Name and Tagline removed from header) --><a href="#home" class="flex items-center">
                     <img src="./img.png" 
                          alt="VAS Global Partners Official Logo - V A Monogram with Upward Arrow and Mountains"
-                         class="w-12 h-12 object-contain"
+                         class="h-12 w-auto object-contain"
                     >
-                    <div class="flex flex-col">
-                        <span class="text-xl sm:text-2xl font-extrabold text-gray-900 leading-none">VAS Global Partners</span>
-                        <!-- Tagline included for stronger branding -->
-                        <span class="text-xs text-gray-500 hidden sm:block leading-none mt-0.5">Precision. Partnership. Progress.</span>
-                    </div>
                 </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex space-x-8">
+                <!-- Desktop Navigation --><nav class="hidden md:flex space-x-8">
                     <a href="#services" class="nav-link text-gray-600 font-medium pb-1">Services</a>
                     <a href="#approach" class="nav-link text-gray-600 font-medium pb-1">Our Approach</a>
                     <a href="#value" class="nav-link text-gray-600 font-medium pb-1">The VAS Advantage</a>
                     <a href="#contact" class="nav-link text-gray-600 font-medium pb-1">Contact</a>
                 </nav>
 
-                <!-- CTA Button (Desktop) - REPLACED INLINE STYLE -->
-                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button bg-secondary">
+                <!-- CTA Button (Desktop) --><a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button bg-secondary">
                     Start Consultation
                     <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2"></i>
                 </a>
 
-                <!-- Mobile Menu Button (Hamburger) - Toggled by JS -->
-                <button id="menu-button" type="button" class="md:hidden text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2" aria-expanded="false">
+                <!-- Mobile Menu Button (Hamburger) --><button id="menu-button" type="button" class="md:hidden text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2" aria-expanded="false">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-3">
+        <!-- Mobile Menu --><div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-3">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
                 <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Our Approach</a>
                 <a href="#value" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">The VAS Advantage</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
-                <!-- REPLACED INLINE STYLE -->
                 <a href="#contact" class="block w-full text-center mt-4 px-3 py-2 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
                     Start Consultation
                 </a>
@@ -112,8 +96,7 @@
         </div>
     </header>
 
-    <!-- 1. Hero Section -->
-    <section id="home" class="hero-bg py-24 sm:py-32">
+    <!-- 1. Hero Section --><section id="home" class="hero-bg py-24 sm:py-32">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm font-semibold tracking-wider text-green-300 uppercase mb-4">Unlocking Your Capacity</p>
             <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
@@ -127,7 +110,6 @@
                 <a href="#services" class="px-8 py-3 text-lg font-semibold rounded-lg text-gray-900 bg-white hover:bg-gray-100 transition duration-300 shadow-xl">
                     Explore Services
                 </a>
-                <!-- REPLACED INLINE STYLE -->
                 <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-white cta-button border border-green-300 bg-secondary">
                     Book a Discovery Call
                 </a>
@@ -135,8 +117,7 @@
         </div>
     </section>
 
-    <!-- 2. Services Section -->
-    <section id="services" class="py-20 sm:py-28 bg-white">
+    <!-- 2. Services Section --><section id="services" class="py-20 sm:py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-extrabold text-center mb-4 text-gradient">Comprehensive Outsourcing Solutions</h2>
             <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
@@ -144,22 +125,19 @@
             </p>
 
             <div class="grid md:grid-cols-3 gap-10">
-                <!-- Service Card 1: Bookkeeping -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
+                <!-- Service Card 1: Bookkeeping --><div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
                     <i data-lucide="check-square" class="w-10 h-10 text-blue-700 mb-4"></i>
                     <h3 class="text-2xl font-bold mb-3">Bookkeeping & Payroll Management</h3>
                     <p class="text-gray-600">Daily transaction processing, bank reconciliation, accounts payable/receivable, and accurate payroll services tailored for efficient business operations.</p>
                 </div>
 
-                <!-- Service Card 2: Accounting -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
+                <!-- Service Card 2: Accounting --><div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
                     <i data-lucide="bar-chart-3" class="w-10 h-10 text-green-600 mb-4"></i>
                     <h3 class="text-2xl font-bold mb-3">Financial Reporting & Analysis</h3>
                     <p class="text-gray-600">Month-end and year-end closing, preparation of comprehensive financial statements (including IFRS/GAAP standards), and in-depth analytical reporting.</p>
                 </div>
 
-                <!-- Service Card 3: Taxation (Updated for global scope) -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
+                <!-- Service Card 3: Taxation (Updated for global scope) --><div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
                     <i data-lucide="cloud" class="w-10 h-10 text-blue-700 mb-4"></i>
                     <h3 class="text-2xl font-bold mb-3">Tax Preparation & Compliance</h3>
                     <p class="text-gray-600">Expert support for tax preparation, compliance, and filing across various jurisdictions, ensuring adherence to global and local tax regulations.</p>
@@ -168,8 +146,7 @@
         </div>
     </section>
 
-    <!-- 3. Our Approach (Image Section) -->
-    <section id="approach" class="py-20 sm:py-28 bg-white">
+    <!-- 3. Our Approach (Image Section) --><section id="approach" class="py-20 sm:py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-extrabold text-center mb-4 text-gray-900">
                 Our Proven <span class="text-gradient">3-Pillar Approach</span> to Global Outsourcing
@@ -179,23 +156,16 @@
             </p>
 
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <!-- Image Side (img.png) -->
-                <div class="mb-10 lg:mb-0 order-2 lg:order-1">
-                    <!-- 
-                        ACTION REQUIRED: This is a placeholder for your process diagram/visual. 
-                        Replace the 'src' with the path to your actual image file.
-                    -->
-                    <img src="https://placehold.co/800x600/10B981/FFFFFF?text=Secure+Outsourcing+Visual" 
+                <!-- Image Side (img.png) --><div class="mb-10 lg:mb-0 order-2 lg:order-1">
+                    <img src="./img.png" 
                          alt="Illustration of Global Teamwork and Secure Data Exchange"
                          class="rounded-xl shadow-2xl w-full h-auto object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
                     >
                 </div>
 
-                <!-- Content Side -->
-                <div class="order-1 lg:order-2">
+                <!-- Content Side --><div class="order-1 lg:order-2">
                     <div class="space-y-8">
-                        <!-- Step 1: Secure Data Handling -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Step 1: Secure Data Handling --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="cloud" class="w-7 h-7 text-blue-700"></i>
                             </div>
@@ -205,8 +175,7 @@
                             </div>
                         </div>
                         
-                        <!-- Step 2: Dedicated Communication -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Step 2: Dedicated Communication --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="phone" class="w-7 h-7 text-green-500"></i>
                             </div>
@@ -216,8 +185,7 @@
                             </div>
                         </div>
 
-                        <!-- Step 3: Quality Assurance -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Step 3: Quality Assurance --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="check-square" class="w-7 h-7 text-blue-700"></i>
                             </div>
@@ -232,12 +200,10 @@
         </div>
     </section>
 
-    <!-- 4. The VAS Advantage (Value Proposition - Highlighting CA/ACCA) -->
-    <section id="value" class="py-20 sm:py-28 bg-gray-100">
+    <!-- 4. The VAS Advantage (Value Proposition - Highlighting CA/ACCA) --><section id="value" class="py-20 sm:py-28 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-                <!-- Text Content -->
-                <div>
+                <!-- Text Content --><div>
                     <span class="text-sm font-semibold tracking-wider uppercase text-blue-700 mb-2 block">Core Differentiators</span>
                     <h2 class="text-4xl font-extrabold mb-6 text-gray-900">
                         The Key to <span class="text-gradient">Operational Excellence</span>
@@ -247,19 +213,17 @@
                     </p>
 
                     <div class="space-y-6">
-                        <!-- Value 1: Global Talent Pool (Highlighting CA/ACCA) -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Value 1: Global Talent Pool (Highlighting CA/ACCA) --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="users" class="w-6 h-6 text-green-500"></i>
                             </div>
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900">Vetted Global Talent</h4>
-                                <p class="text-gray-500">Our professionals are highly vetted, English-proficient, and include qualified **Chartered Accountants (CA)** and **ACCAs**, rigorously trained in international standards (US GAAP, IFRS).</p>
+                                <p class="text-gray-500">Our professionals are highly vetted, English-proficient, and include qualified Chartered Accountants (CA) and ACCAs, rigorously trained in international standards (US GAAP, IFRS).</p>
                             </div>
                         </div>
 
-                        <!-- Value 2: Time Zone Synergy (Reframed) -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Value 2: Time Zone Synergy (Reframed) --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="clock" class="w-6 h-6 text-blue-700"></i>
                             </div>
@@ -269,29 +233,25 @@
                             </div>
                         </div>
 
-                        <!-- Value 3: Precision & Partnership -->
-                        <div class="flex items-start space-x-4">
+                        <!-- Value 3: Precision & Partnership --><div class="flex items-start space-x-4">
                             <div class="flex-shrink-0 pt-1">
                                 <i data-lucide="check-square" class="w-6 h-6 text-green-500"></i>
                             </div>
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900">Precision & Partnership</h4>
-                                <p class="text-gray-500">Our process emphasizes the "P's": **Precision** in data, unwavering **Partnership** with your firm, driving consistent **Progress**.</p>
+                                <p class="text-gray-500">Our process emphasizes the "P's": Precision in data, unwavering Partnership with your firm, driving consistent Progress.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Visual - Mockup of the logo on a screen -->
-                <div class="hidden lg:block">
+                <!-- Visual - Mockup of the logo on a screen --><div class="hidden lg:block">
                     <div class="bg-white rounded-xl p-10 shadow-2xl mt-10 lg:mt-0">
                         <div class="w-full h-80 flex items-center justify-center bg-gray-50 rounded-lg border-2 border-gray-200">
-                             <!-- LOGO SOURCE UPDATED TO img.png -->
-                            <div class="flex flex-col items-center">
+                             <!-- LOGO IMAGE IN CORE DIFFERENTIATORS SECTION - RESIZED --><div class="flex flex-col items-center">
                                 <img src="./img.png" 
                                      alt="VAS Global Partners Logo Display"
-                                     class="w-40 h-auto object-contain mb-2"
-                                >
+                                     class="w-64 h-auto object-contain mb-2" <!-- Changed w-40 to w-64 -->>
                                 <p class="text-sm text-gray-500">Precision. Partnership. Progress.</p>
                             </div>
                         </div>
@@ -301,8 +261,7 @@
         </div>
     </section>
 
-    <!-- 5. Call to Action/Contact Form - REPLACED INLINE STYLE -->
-    <section id="contact" class="py-20 sm:py-28 bg-primary">
+    <!-- 5. Call to Action/Contact Form --><section id="contact" class="py-20 sm:py-28 bg-primary">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
             <h2 class="text-4xl font-extrabold text-center mb-4">Ready to Scale Your Firm?</h2>
             <p class="text-xl text-center text-blue-200 mb-12">
@@ -323,12 +282,10 @@
                         <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
                         <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
                     </div>
-                    <!-- REPLACED INLINE STYLE -->
                     <button type="submit" class="w-full flex justify-center items-center py-3 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
                         Send Consultation Request
                     </button>
-                    <!-- Success Message Container (Hidden by Default) -->
-                    <p id="success-message" class="text-center text-sm font-semibold text-green-600 hidden">
+                    <!-- Success Message Container (Hidden by Default) --><p id="success-message" class="text-center text-sm font-semibold text-green-600 hidden">
                         Thank you! We have received your request and will be in touch shortly.
                     </p>
                 </form>
@@ -336,18 +293,15 @@
         </div>
     </section>
 
-    <!-- 6. Footer -->
-    <footer class="bg-gray-900">
+    <!-- 6. Footer --><footer class="bg-gray-900">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Brand Info -->
-                <div class="col-span-2 md:col-span-1">
+                <!-- Brand Info --><div class="col-span-2 md:col-span-1">
                     <span class="text-xl font-bold text-white">VAS Global Partners</span>
                     <p class="mt-4 text-sm text-gray-400">Precision. Partnership. Progress.</p>
                 </div>
 
-                <!-- Quick Links -->
-                <div>
+                <!-- Quick Links --><div>
                     <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigate</h3>
                     <ul class="mt-4 space-y-4">
                         <li><a href="#services" class="text-base text-gray-400 hover:text-white">Services</a></li>
@@ -356,13 +310,11 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info (Updated Phone Numbers) -->
-                <div>
+                <!-- Contact Info --><div>
                     <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
                     <ul class="mt-4 space-y-4">
                         <li class="flex items-center space-x-3">
                             <i data-lucide="phone" class="w-4 h-4 text-green-500"></i>
-                            <!-- Updated Contact Number without country mention -->
                             <a href="tel:+977981234567899" class="text-base text-gray-400 hover:text-white">+977 981234567899</a>
                         </li>
                         <li class="flex items-center space-x-3">
@@ -380,8 +332,7 @@
                     </ul>
                 </div>
 
-                 <!-- Social Links (Placeholder) -->
-                 <div>
+                 <!-- Social Links (Placeholder) --><div>
                     <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
                     <div class="mt-4 flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white">
@@ -406,8 +357,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu and Form Submission -->
-    <script>
+    <!-- JavaScript for Mobile Menu and Form Submission --><script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuButton = document.getElementById('menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
