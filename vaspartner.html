@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO OPTIMIZATION: Critical for search ranking and click-through rate -->
+    <title>VAS Global Partners | Accounting Outsourcing, CA/ACCA Bookkeeping & Tax Services</title>
+    <meta name="description" content="Scale your firm with VAS Global Partners. We provide expert, vetted CA/ACCA-qualified accounting outsourcing for bookkeeping, tax, and financial reporting globally. High quality, 24/7 service.">
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script type="module">
+      import { createIcons, Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
+      createIcons({ icons: { Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock } });
+    </script>
+    <style>
+        /* Custom styles for gradients and visual polish */
+        :root {
+            --color-primary: #1E3A8A; /* Deep Blue */
+            --color-secondary: #10B981; /* Vibrant Green */
+        }
+        .hero-bg {
+            background-color: var(--color-primary);
+            background-image: linear-gradient(135deg, var(--color-primary) 0%, #172B5F 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link:hover {
+            color: var(--color-secondary);
+            border-bottom: 2px solid var(--color-secondary);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+        .cta-button:hover {
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand Name -->
+                <a href="#home" class="flex items-center space-x-3">
+                    <!-- Logo Design (First Logo Requested) -->
+                    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 p-1">
+                        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- V-A Monogram with Upward Arrow -->
+                            <path d="M 10 90 L 50 10 L 90 90 L 70 90 L 50 50 L 30 90 Z" fill="#10B981"/>
+                            <path d="M 50 50 L 70 50 L 70 30 L 90 70 L 80 80 L 60 40 L 60 90 Z" fill="#1E3A8A"/>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-extrabold text-gray-900">VAS Global Partners</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="nav-link text-gray-600 font-medium pb-1">Services</a>
+                    <a href="#approach" class="nav-link text-gray-600 font-medium pb-1">Our Approach</a>
+                    <a href="#value" class="nav-link text-gray-600 font-medium pb-1">The VAS Advantage</a>
+                    <a href="#contact" class="nav-link text-gray-600 font-medium pb-1">Contact</a>
+                </nav>
+
+                <!-- CTA Button (Desktop) -->
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                    Start Consultation
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2"></i>
+                </a>
+
+                <!-- Mobile Menu Button (Hamburger) - Toggled by JS -->
+                <button id="menu-button" type="button" class="md:hidden text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2" aria-expanded="false">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-3">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+                <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Our Approach</a>
+                <a href="#value" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">The VAS Advantage</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
+                <a href="#contact" class="block w-full text-center mt-4 px-3 py-2 border border-transparent text-base font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                    Start Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-bg py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold tracking-wider text-green-300 uppercase mb-4">Unlocking Your Capacity</p>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                <span class="block">Precision Outsourcing for</span>
+                <span class="block text-green-300">Global Accounting & Business Growth.</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
+                VAS Global Partners delivers reliable, high-quality bookkeeping, accounting, and taxation support, empowering businesses worldwide to scale efficiently and profitably.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#services" class="px-8 py-3 text-lg font-semibold rounded-lg text-gray-900 bg-white hover:bg-gray-100 transition duration-300 shadow-xl">
+                    Explore Services
+                </a>
+                <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-white cta-button border border-green-300" style="background-color: var(--color-secondary);">
+                    Book a Discovery Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Services Section -->
+    <section id="services" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4 text-gradient">Comprehensive Outsourcing Solutions</h2>
+            <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                Our services are designed to manage your financial complexities with precision, wherever your business operates.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Service Card 1: Bookkeeping -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
+                    <i data-lucide="check-square" class="w-10 h-10 text-blue-700 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Bookkeeping & Payroll Management</h3>
+                    <p class="text-gray-600">Daily transaction processing, bank reconciliation, accounts payable/receivable, and accurate payroll services tailored for efficient business operations.</p>
+                </div>
+
+                <!-- Service Card 2: Accounting -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
+                    <i data-lucide="bar-chart-3" class="w-10 h-10 text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Financial Reporting & Analysis</h3>
+                    <p class="text-gray-600">Month-end and year-end closing, preparation of comprehensive financial statements (including IFRS/GAAP standards), and in-depth analytical reporting.</p>
+                </div>
+
+                <!-- Service Card 3: Taxation (Updated for global scope) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
+                    <i data-lucide="cloud" class="w-10 h-10 text-blue-700 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Tax Preparation & Compliance</h3>
+                    <p class="text-gray-600">Expert support for tax preparation, compliance, and filing across various jurisdictions, ensuring adherence to global and local tax regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The VAS Advantage (Value Proposition - Highlighting CA/ACCA) -->
+    <section id="value" class="py-20 sm:py-28 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <span class="text-sm font-semibold tracking-wider uppercase text-blue-700 mb-2 block">Core Differentiators</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900">
+                        The Key to <span class="text-gradient">Operational Excellence</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Choosing VAS Global Partners is a strategic decision that combines high-quality service with unmatched operational efficiency, allowing your firm to focus on client growth.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Value 1: Global Talent Pool (Highlighting CA/ACCA) -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="users" class="w-6 h-6 text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900">Vetted Global Talent</h4>
+                                <p class="text-gray-500">Our professionals are highly vetted, English-proficient, and include qualified **Chartered Accountants (CA)** and **ACCAs**, rigorously trained in international standards (US GAAP, IFRS).</p>
+                            </div>
+                        </div>
+
+                        <!-- Value 2: Time Zone Synergy (Reframed) -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="clock" class="w-6 h-6 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900">24/7 Service Capability</h4>
+                                <p class="text-gray-500">We leverage global time differences to ensure a consistent workflow, allowing us to complete tasks while your team focuses on client-facing work.</p>
+                            </div>
+                        </div>
+
+                        <!-- Value 3: Precision & Partnership -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="check-square" class="w-6 h-6 text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900">Precision & Partnership</h4>
+                                <p class="text-gray-500">Our process emphasizes the "P's": **Precision** in data, unwavering **Partnership** with your firm, driving consistent **Progress**.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual - Mockup of the logo on a screen -->
+                <div class="hidden lg:block">
+                    <div class="bg-white rounded-xl p-10 shadow-2xl mt-10 lg:mt-0">
+                        <div class="w-full h-80 flex items-center justify-center bg-gray-50 rounded-lg border-2 border-gray-200">
+                             <!-- Replicating the logo design -->
+                            <div class="flex flex-col items-center">
+                                <svg class="w-32 h-32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 10 90 L 50 10 L 90 90 L 70 90 L 50 50 L 30 90 Z" fill="#10B981"/>
+                                    <path d="M 50 50 L 70 50 L 70 30 L 90 70 L 80 80 L 60 40 L 60 90 Z" fill="#1E3A8A"/>
+                                </svg>
+                                <p class="text-2xl font-bold text-gray-800 mt-4">VAS Global Partners</p>
+                                <p class="text-sm text-gray-500">Precision. Partnership. Progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Call to Action/Contact Form -->
+    <section id="contact" class="py-20 sm:py-28" style="background-color: var(--color-primary);">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <h2 class="text-4xl font-extrabold text-center mb-4">Ready to Scale Your Firm?</h2>
+            <p class="text-xl text-center text-blue-200 mb-12">
+                Let’s discuss how outsourcing to VAS Global Partners can transform your operations.
+            </p>
+
+            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-2xl">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="name@firm.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full flex justify-center items-center py-3 border border-transparent text-base font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                        Send Consultation Request
+                    </button>
+                    <!-- Success Message Container (Hidden by Default) -->
+                    <p id="success-message" class="text-center text-sm font-semibold text-green-600 hidden">
+                        Thank you! We have received your request and will be in touch shortly.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Brand Info -->
+                <div class="col-span-2 md:col-span-1">
+                    <span class="text-xl font-bold text-white">VAS Global Partners</span>
+                    <p class="mt-4 text-sm text-gray-400">Precision. Partnership. Progress.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigate</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#services" class="text-base text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#approach" class="text-base text-gray-400 hover:text-white">Our Approach</a></li>
+                        <li><a href="#value" class="text-base text-gray-400 hover:text-white">The Advantage</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info (Updated Phone Numbers) -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-green-500"></i>
+                            <!-- Updated Contact Number without country mention -->
+                            <a href="tel:+977981234567899" class="text-base text-gray-400 hover:text-white">+977 981234567899</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-green-500"></i>
+                            <a href="tel:+15551234567" class="text-base text-gray-400 hover:text-white">+1 (555) 123-4567 (US Inquiries)</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="w-4 h-4 text-green-500"></i>
+                            <a href="mailto:info@vasglobalpartners.com" class="text-base text-gray-400 hover:text-white">info@vasglobalpartners.com</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-green-500 mt-1"></i>
+                            <span class="text-base text-gray-400">Asia-Pacific (Operations Hub)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                 <!-- Social Links (Placeholder) -->
+                 <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.4l.6-3h-3v-1.9c0-.8.3-1.5 1.5-1.5h1.6V5.4c-.3-.1-1.3-.3-2.5-.3-2.6 0-4.3 1.6-4.3 4.5v2.7h-3V13.5h3v8.5c0 .3.2.5.5.5h3c.3 0 .5-.2.5-.5v-8.5z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.6.8-2.5 1-.8-.8-1.9-1.3-3.1-1.3-2.4 0-4.3 1.9-4.3 4.3 0 .3 0 .7.1 1-.4-.1-.8-.2-1.2-.4-3.5-1.8-5.9-4.7-7.7-7.8-.4.7-.6 1.4-.6 2.2 0 1.5.8 2.8 2 3.5-.7 0-1.4-.2-2-.5v.1c0 2 1.4 3.7 3.2 4-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2 2.7 3.8 2.7-1.5 1.2-3.4 1.9-5.5 1.9-.3 0-.6 0-.8-.1 1.9 1.2 4.1 1.9 6.5 1.9 7.8 0 12.1-6.4 12.1-12.1 0-.2 0-.4 0-.6.8-.5 1.4-1.2 1.8-1.9z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 0h-15C2 0 0 2 0 4.5v15C0 22 2 24 4.5 24h15c2.5 0 4.5-2 4.5-4.5v-15C24 2 22 0 19.5 0zM7 20h-3v-9h3v9zm5.5-11.5c-1.3 0-2.2-.9-2.2-2.1 0-1.2.9-2.1 2.2-2.1 1.3 0 2.2.9 2.2 2.1 0 1.2-.9 2.1-2.2 2.1zm4.5 11.5h-3v-5c0-1.2-.7-1.9-1.8-1.9-1.1 0-1.8.7-1.8 1.9v5h-3v-9h3v1.3c.5-.7 1.3-1.3 2.5-1.3 1.9 0 3.2 1.2 3.2 3.7v5.3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 border-t border-gray-800 pt-8">
+                <p class="text-base text-gray-500 text-center">
+                    &copy; 2025 VAS Global Partners. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const contactForm = document.getElementById('contact-form');
+            const successMessage = document.getElementById('success-message');
+
+            // 1. Mobile Menu Toggle
+            menuButton.addEventListener('click', () => {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // 2. Simple Form Submission Handling (Placeholder)
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                // In a real application, this is where you would send data to a backend server.
+                console.log('Form submission simulated.');
+                
+                // Show success message and clear form
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+        });
+    </script>
+
+</body>
+</html>
