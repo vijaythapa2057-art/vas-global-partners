@@ -15,11 +15,20 @@
       createIcons({ icons: { Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock } });
     </script>
     <style>
-        /* Custom styles for gradients and visual polish */
+        /* Custom styles for gradients and visual polish (ALL STYLES CENTRALIZED HERE) */
         :root {
             --color-primary: #1E3A8A; /* Deep Blue */
             --color-secondary: #10B981; /* Vibrant Green */
         }
+        
+        /* Utility classes for background colors, replacing inline styles */
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
         .hero-bg {
             background-color: var(--color-primary);
             background-image: linear-gradient(135deg, var(--color-primary) 0%, #172B5F 100%);
@@ -75,8 +84,8 @@
                     <a href="#contact" class="nav-link text-gray-600 font-medium pb-1">Contact</a>
                 </nav>
 
-                <!-- CTA Button (Desktop) -->
-                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                <!-- CTA Button (Desktop) - REPLACED INLINE STYLE -->
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button bg-secondary">
                     Start Consultation
                     <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2"></i>
                 </a>
@@ -95,7 +104,8 @@
                 <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Our Approach</a>
                 <a href="#value" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">The VAS Advantage</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
-                <a href="#contact" class="block w-full text-center mt-4 px-3 py-2 border border-transparent text-base font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                <!-- REPLACED INLINE STYLE -->
+                <a href="#contact" class="block w-full text-center mt-4 px-3 py-2 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
                     Start Consultation
                 </a>
             </div>
@@ -117,7 +127,8 @@
                 <a href="#services" class="px-8 py-3 text-lg font-semibold rounded-lg text-gray-900 bg-white hover:bg-gray-100 transition duration-300 shadow-xl">
                     Explore Services
                 </a>
-                <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-white cta-button border border-green-300" style="background-color: var(--color-secondary);">
+                <!-- REPLACED INLINE STYLE -->
+                <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-white cta-button border border-green-300 bg-secondary">
                     Book a Discovery Call
                 </a>
             </div>
@@ -157,7 +168,69 @@
         </div>
     </section>
 
-    <!-- 3. The VAS Advantage (Value Proposition - Highlighting CA/ACCA) -->
+    <!-- 3. Our Approach (Image Section) -->
+    <section id="approach" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4 text-gray-900">
+                Our Proven <span class="text-gradient">3-Pillar Approach</span> to Global Outsourcing
+            </h2>
+            <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                Security, compliance, and communication are at the heart of our seamless service integration.
+            </p>
+
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <!-- Image Side (img.png) -->
+                <div class="mb-10 lg:mb-0 order-2 lg:order-1">
+                    <!-- Image placeholder for the file you will upload to the repository root -->
+                    <img src="img.png" 
+                         alt="Illustration of Global Teamwork and Secure Data Exchange"
+                         class="rounded-xl shadow-2xl w-full h-auto object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/1E3A8A/FFFFFF?text=Secure+Outsourcing+Visual'" 
+                    >
+                </div>
+
+                <!-- Content Side -->
+                <div class="order-1 lg:order-2">
+                    <div class="space-y-8">
+                        <!-- Step 1: Secure Data Handling -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="cloud" class="w-7 h-7 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-900">Secure & Confidential Workflow</h4>
+                                <p class="text-gray-600">We utilize secure VPNs and cloud-based accounting platforms (QuickBooks, Xero, etc.) with strict data access protocols, ensuring client confidentiality and integrity.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Dedicated Communication -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="phone" class="w-7 h-7 text-green-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-900">Dedicated Account Manager</h4>
+                                <p class="text-gray-600">You'll work with a single, experienced point of contact who manages the workflow and communication, providing clarity and accountability across all projects.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Quality Assurance -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 pt-1">
+                                <i data-lucide="check-square" class="w-7 h-7 text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-gray-900">Rigorous Quality Checks</h4>
+                                <p class="text-gray-600">Every deliverable undergoes a multi-level review by a senior CA/ACCA before it reaches your desk, guaranteeing accuracy and compliance with required standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The VAS Advantage (Value Proposition - Highlighting CA/ACCA) -->
     <section id="value" class="py-20 sm:py-28 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
@@ -226,8 +299,8 @@
         </div>
     </section>
 
-    <!-- 4. Call to Action/Contact Form -->
-    <section id="contact" class="py-20 sm:py-28" style="background-color: var(--color-primary);">
+    <!-- 5. Call to Action/Contact Form - REPLACED INLINE STYLE -->
+    <section id="contact" class="py-20 sm:py-28 bg-primary">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
             <h2 class="text-4xl font-extrabold text-center mb-4">Ready to Scale Your Firm?</h2>
             <p class="text-xl text-center text-blue-200 mb-12">
@@ -248,7 +321,8 @@
                         <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
                         <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
                     </div>
-                    <button type="submit" class="w-full flex justify-center items-center py-3 border border-transparent text-base font-medium rounded-lg text-white cta-button" style="background-color: var(--color-secondary);">
+                    <!-- REPLACED INLINE STYLE -->
+                    <button type="submit" class="w-full flex justify-center items-center py-3 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
                         Send Consultation Request
                     </button>
                     <!-- Success Message Container (Hidden by Default) -->
@@ -260,7 +334,7 @@
         </div>
     </section>
 
-    <!-- 5. Footer -->
+    <!-- 6. Footer -->
     <footer class="bg-gray-900">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
