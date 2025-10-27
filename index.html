@@ -33,6 +33,7 @@
             background-image: linear-gradient(135deg, var(--color-primary) 0%, #172B5F 100%);
         }
         .text-gradient {
+            /* Applies the blue-to-green gradient to text */
             background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -63,12 +64,14 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo with Company Name and Tagline -->
                 <a href="#home" class="flex items-center space-x-3">
+                    <!-- LOGO IMAGE: Increased size from h-12 to h-16 -->
                     <img src="./img1.png" 
                          alt="VAS Global Partners Official Logo - V A Monogram with Upward Arrow and Mountains"
-                         class="h-12 w-auto object-contain"
+                         class="h-16 w-auto object-contain"
                     >
                     <div class="flex flex-col">
-                        <span class="text-xl sm:text-2xl font-extrabold text-gray-900 leading-none">VAS Global Partners</span>
+                        <!-- COMPANY NAME: Increased size and applied text-gradient -->
+                        <span class="text-2xl sm:text-3xl font-extrabold text-gradient leading-none">VAS Global Partners</span>
                         <span class="text-xs text-gray-500 hidden sm:block leading-none mt-0.5">Precision. Partnership. Progress.</span>
                     </div>
                 </a>
@@ -176,7 +179,6 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                 <!-- Image for 3-Pillar Approach -->
                 <div class="mb-10 lg:mb-0 order-2 lg:order-1">
-                    <!-- NOTE: Replaced img.png with img2.png for the specific 3-Pillar graphic -->
                     <img src="./img2.png" 
                          alt="Abstract illustration of three interconnected pillars representing security, compliance, and communication in a global network."
                          class="rounded-xl shadow-2xl w-full h-auto object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
@@ -412,7 +414,6 @@
             contactForm.addEventListener('submit', (event) => {
                 event.preventDefault();
                 // In a real application, this is where you would send data to a backend server.
-                // FIX: Changed mismatched quotes to consistent single quotes.
                 console.log('Form submission simulated.'); 
                 
                 // Show success message and clear form
