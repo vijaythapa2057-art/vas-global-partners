@@ -1,512 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>VAS Global Partners | Accounting Outsourcing, CA/ACCA Bookkeeping & Tax Services</title>
-    <meta name="description" content="Scale your firm with VAS Global Partners. We provide expert, vetted CA/ACCA-qualified accounting outsourcing for bookkeeping, tax, and financial reporting globally. High quality, 24/7 service.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script type="module">
-      import { createIcons, Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock, Calculator, DollarSign, Briefcase, Globe, TrendingUp } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
-      createIcons({ icons: { Cloud, CheckSquare, BarChart3, Users, MapPin, Mail, Phone, ArrowUpRight, Clock, Calculator, DollarSign, Briefcase, Globe, TrendingUp } });
-    </script>
-    <style>
-        /* Custom styles for gradients and visual polish (ALL STYLES CENTRALIZED HERE) */
-        :root {
-            --color-primary: #1E3A8A; /* Deep Blue */
-            --color-secondary: #10B981; /* Vibrant Green */
-        }
-        
-        /* Utility classes for background colors, replacing inline styles */
-        .bg-primary {
-            background-color: var(--color-primary);
-        }
-        .bg-secondary {
-            background-color: var(--color-secondary);
-        }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VAS Global Partners | Elite Accounting Talent. Zero Hiring Risk.</title>
+  <meta name="description" content="Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams. Vetted CA/ACCA professionals from Kathmandu serving USA, UK & Australia." />
+  <meta name="keywords" content="accounting outsourcing, bookkeeping outsourcing, CPA outsourcing, offshore accounting, virtual CFO, tax compliance, SaaS accounting, ecommerce bookkeeping" />
+  <link rel="canonical" href="https://vasglobalpartners.com/" />
 
-        /* The previous hero background class has been removed for the light grey design. */
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="VAS Global Partners | Accounting Outsourcing Experts">
+  <meta property="og:description" content="Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.">
+  <meta property="og:image" content="https://vasglobalpartners.com/img1.png">
+  <meta property="og:url" content="https://vasglobalpartners.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
 
-        .text-gradient {
-            /* Applies the blue-to-green gradient to text */
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+  <!-- JSON-LD Schema (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"VAS Global Partners",
+    "url":"https://vasglobalpartners.com",
+    "logo":"https://vasglobalpartners.com/img1.png",
+    "sameAs":[
+      "https://www.linkedin.com/company/vasglobalpartners",
+      "https://www.facebook.com/vasglobalpartners"
+    ],
+    "contactPoint":[
+      {
+        "@type":"ContactPoint",
+        "telephone":"+9779812345678",
+        "contactType":"customer service",
+        "availableLanguage":["English"]
+      }
+    ],
+    "description":"Global accounting outsourcing firm providing bookkeeping, tax, and virtual CFO services to CPA firms, SaaS startups, retail & eCommerce businesses.",
+    "address": {
+      "@type":"PostalAddress",
+      "addressLocality":"Kathmandu",
+      "addressCountry":"Nepal"
+    },
+    "founder": {
+      "@type":"Person",
+      "name":"Vijaya Thapa"
+    },
+    "foundingDate":"2024"
+  }
+  </script>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="https://placehold.co/32x32/1E3A8A/FFFFFF?text=V" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "vas-blue": "#1E3A8A",
+            "vas-green": "#10B981"
+          }
         }
-        .nav-link:hover {
-            color: var(--color-secondary);
-            border-bottom: 2px solid var(--color-secondary);
-        }
-        .cta-button {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-        }
-        .cta-button:hover {
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
-            transform: translateY(-2px);
-        }
-        html {
-            scroll-behavior: smooth;
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+      }
+    };
+  </script>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    :root {
+      --vas-blue: #1E3A8A;
+      --vas-green: #10B981;
+    }
+
+    .text-gradient {
+      background: linear-gradient(90deg, var(--vas-blue), var(--vas-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Header large/small */
+    .header-large { padding: 1rem 0; box-shadow: 0 6px 20px rgba(2,6,23,0.04); }
+    .header-small { padding: 0.35rem 0; box-shadow: 0 8px 28px rgba(2,6,23,0.06); backdrop-filter: blur(6px); }
+
+    .cta-shadow { box-shadow: 0 8px 26px rgba(16,185,129,0.12); }
+
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 60;
+      border-radius: 9999px;
+      transition: transform .12s ease;
+    }
+    .whatsapp-float:hover { transform: translateY(-4px); }
+
+    /* Focus outline */
+    :focus { outline: 3px solid rgba(59,130,246,0.14); outline-offset: 2px; }
+
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body class="text-gray-800 bg-gray-50">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Increased header height to better accommodate the very large logo -->
-            <div class="flex justify-between items-center h-32"> 
-                <!-- Logo with Company Name and Tagline -->
-                <a href="#home" class="flex items-center space-x-3">
-                    <!-- LOGO IMAGE: Significantly increased size to h-28 for maximum prominence -->
-                    <img src="./img1.png" 
-                         alt="VAS Global Partners Official Logo - V A Monogram with Upward Arrow and Mountains"
-                         class="h-28 w-auto object-contain" 
-                         onerror="this.onerror=null;this.src='https://placehold.co/100x100/1E3A8A/FFFFFF?text=VA'"
-                    >
-                    <div class="flex flex-col">
-                        <!-- COMPANY NAME: Gradient and bold font -->
-                        <span class="text-2xl sm:text-3xl font-extrabold text-gradient leading-none">VAS Global Partners</span>
-                        <span class="text-xs text-gray-500 hidden sm:block leading-none mt-0.5">Precision. Partnership. Progress.</span>
-                    </div>
-                </a>
+  <!-- HEADER -->
+  <header id="site-header" class="fixed w-full z-50 bg-white header-large transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo + Name -->
+        <a href="#home" class="flex items-center gap-3 py-2">
+          <!-- Use img1.png uploaded to repo root -->
+          <img src="img1.png" alt="VAS Global Partners logo" class="h-12 w-12 object-contain" />
+          <div>
+            <div class="text-lg font-extrabold text-vas-blue">VAS Global Partners</div>
+            <div class="text-xs text-gray-500 -mt-0.5">Precision. Partnership. Progress.</div>
+          </div>
+        </a>
 
-                <!-- Desktop Navigation - ADDED #about -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link text-gray-600 font-medium pb-1">About Us</a>
-                    <a href="#services" class="nav-link text-gray-600 font-medium pb-1">Services</a>
-                    <a href="#approach" class="nav-link text-gray-600 font-medium pb-1">Our Approach</a>
-                    <a href="#value" class="nav-link text-gray-600 font-medium pb-1">The VAS Advantage</a>
-                    <a href="#contact" class="nav-link text-gray-600 font-medium pb-1">Contact</a>
-                </nav>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-gray-600 hover:text-vas-blue font-medium">About</a>
+          <a href="#services" class="text-gray-600 hover:text-vas-blue font-medium">Services</a>
+          <a href="#clients" class="text-gray-600 hover:text-vas-blue font-medium">Who We Serve</a>
+          <a href="#approach" class="text-gray-600 hover:text-vas-blue font-medium">Approach</a>
+          <a href="#contact" class="text-gray-600 hover:text-vas-blue font-medium">Contact</a>
+        </nav>
 
-                <!-- CTA Button (Desktop) -->
-                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white cta-button bg-secondary">
-                    Schedule a Meeting
-                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2"></i>
-                </a>
+        <!-- CTA + Mobile Menu -->
+        <div class="flex items-center gap-3">
+          <a id="cta-desktop" href="#contact" class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-vas-green text-white font-semibold cta-shadow hover:opacity-95">
+            Schedule a Meeting
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-button" type="button" class="md:hidden text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2" aria-expanded="false">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </div>
+          <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-vas-blue focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+            <svg id="menu-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menu-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
         </div>
+      </div>
+    </div>
 
-        <!-- Mobile Menu Panel - ADDED #about -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-3">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">About Us</a>
-                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
-                <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Our Approach</a>
-                <a href="#value" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">The VAS Advantage</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
-                <a href="#contact" class="block w-full text-center mt-4 px-3 py-2 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
-                    Schedule a Meeting
-                </a>
-            </div>
-        </div>
-    </header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
+      <div class="px-4 pt-4 pb-6 space-y-2">
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">About</a>
+        <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+        <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Who We Serve</a>
+        <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Approach</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section (Updated with Light Grey Background and Gradient Headline) -->
-    <section id="home" class="bg-gray-100 py-24 sm:py-32">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <!-- REVISED TAGLINE COLOR -->
-            <p class="text-sm font-semibold tracking-wider text-blue-700 uppercase mb-4">Global Finance Outsourcing Partner</p>
-            
-            <!-- REVISED HEADLINE - Using text-gradient for brand colors -->
-            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-extrabold leading-tight mb-6">
-                <span class="block text-gradient">Elite Accounting Talent.</span>
-                <span class="block text-gray-900">Zero Hiring Risk.</span>
-            </h1>
-            
-            <!-- REVISED SUBTEXT COLOR -->
-            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
-                Vetted CAs and ACCAs deliver 24/7, error-free bookkeeping, tax, and financial reporting.
-            </p>
-            <div class="flex justify-center space-x-4">
-                <a href="#about" class="px-8 py-3 text-lg font-semibold rounded-lg text-gray-900 bg-white hover:bg-gray-100 transition duration-300 shadow-xl border border-gray-300">
-                    Learn About Us
-                </a>
-                <!-- Updated CTA text here -->
-                <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-white cta-button bg-secondary hover:bg-green-600">
-                    Request a Consultation
-                </a>
-            </div>
+  <!-- MAIN / HERO -->
+  <main id="home" class="pt-28">
+    <section class="bg-gradient-to-b from-gray-50 to-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <p class="text-sm font-semibold tracking-wide text-vas-blue uppercase mb-4">Global Finance Outsourcing Partner</p>
+
+        <!-- Adjusted hero font sizes & spacing -->
+        <h1 class="font-extrabold leading-tight text-gray-900 mb-6">
+          <span class="block text-3xl sm:text-4xl md:text-4xl text-gradient mb-6">Elite Accounting Talent.</span>
+          <span class="block text-2xl sm:text-3xl md:text-3xl mt-6">Zero Hiring Risk.</span>
+        </h1>
+
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.
+        </p>
+
+        <div class="flex justify-center gap-4">
+          <a href="#clients" class="inline-block px-6 py-3 rounded-lg bg-white border border-gray-200 text-gray-900 font-semibold shadow hover:shadow-lg">Who We Serve</a>
+          <a href="#contact" class="inline-block px-6 py-3 rounded-lg bg-vas-green text-white font-semibold cta-shadow hover:bg-vas-green/95">Request a Consultation</a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 sm:py-28 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                
-                <!-- Text Content -->
-                <div class="mb-10 lg:mb-0">
-                    <span class="text-sm font-semibold tracking-wider uppercase text-blue-700 mb-2 block">Our Mission & Foundation</span>
-                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900">
-                        Who We Are: <span class="text-gradient">Vetted Experts Driving Your Success.</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        VAS Global Partners was founded on the principle that scaling accounting firms should never mean compromising on quality. We bridge the talent gap by providing immediate access to a rigorously vetted team of **Chartered Accountants (CA) and ACCA-qualified professionals**.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <i data-lucide="globe" class="w-5 h-5 text-green-500 flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700">**Global Standards:** Expertise in US GAAP, IFRS, and common international regulatory frameworks.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <i data-lucide="trending-up" class="w-5 h-5 text-green-500 flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700">**Focus on Growth:** We handle the complexity so your in-house team can focus entirely on high-value client advisory.</p>
-                        </div>
-                    </div>
-                    <a href="#contact" class="mt-8 inline-flex items-center text-blue-700 font-semibold hover:text-green-600 transition duration-300">
-                        Meet Our Leadership Team
-                        <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1"></i>
-                    </a>
-                </div>
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-sm font-semibold uppercase text-vas-blue">Our Mission & Foundation</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold mt-4 mb-4">Who We Are: <span class="text-gradient">Vetted Experts Driving Your Success.</span></h2>
+          <p class="text-gray-600 mb-6">
+            VAS Global Partners bridges the talent gap for accounting firms and businesses by providing immediate access to rigorously vetted Chartered Accountants (CA) and ACCA-qualified professionals trained in US GAAP, IFRS, and international practices.
+          </p>
 
-                <!-- Image / Visual -->
-                <div class="order-first lg:order-2">
-                    <img src="https://placehold.co/600x400/F3F4F6/1E3A8A?text=VAS+Team+Working+Globally" 
-                         alt="A diverse team of accountants working collaboratively across time zones."
-                         class="rounded-xl shadow-xl w-full h-auto object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3F4F6/1E3A8A?text=VA'"
-                    >
-                </div>
-            </div>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <svg class="h-5 w-5 text-vas-green mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p class="text-gray-700">Global standards expertise (US GAAP, IFRS) and a multi-level QA review for every deliverable.</p>
+            </li>
+            <li class="flex items-start space-x-3">
+              <svg class="h-5 w-5 text-vas-green mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p class="text-gray-700">Dedicated account managers, secure workflows, and 24/7 capability leveraging time-zone advantages.</p>
+            </li>
+          </ul>
+
+          <a href="#contact" class="inline-flex items-center mt-8 text-vas-blue font-semibold hover:text-vas-green">
+            Meet Our Leadership Team
+            <svg class="h-4 w-4 ml-2" viewBox="0 0 24 24" fill="none"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
+
+        <div class="rounded-xl overflow-hidden shadow-xl">
+          <img loading="lazy" src="https://placehold.co/800x520/F3F4F6/1E3A8A?text=Team+Collaboration" alt="Team collaboration" class="w-full h-full object-cover">
+        </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 sm:py-28 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-center mb-4 text-gradient">Comprehensive Outsourcing Solutions</h2>
-            <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
-                Our services are designed to manage your financial complexities with precision, wherever your business operates. We are your dedicated offshore accounting partners.
-            </p>
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="text-3xl font-extrabold text-vas-blue mb-4">Comprehensive Outsourcing Solutions</h3>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Accurate bookkeeping, AP/AR, payroll, tax, reporting and Virtual CFO services designed for CPA firms and fast-growing businesses.</p>
 
-            <!-- Updated grid layout to display 6 cards effectively -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Service Card 1: Comprehensive Bookkeeping -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
-                    <i data-lucide="check-square" class="w-8 h-8 text-blue-700 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Comprehensive Bookkeeping</h3>
-                    <p class="text-gray-600 text-sm">Accurate daily transaction processing, general ledger maintenance, and chart of accounts management to ensure financial integrity and up-to-date records.</p>
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- cards -->
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">Comprehensive Bookkeeping</h4>
+            <p class="text-gray-600 text-sm">Daily transaction processing, reconciliations, GL maintenance and robust month-end closing practices.</p>
+          </div>
 
-                <!-- Service Card 2: AP & AR Management -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
-                    <i data-lucide="calculator" class="w-8 h-8 text-green-600 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">AP & AR Management</h3>
-                    <p class="text-gray-600 text-sm">Efficiently manage invoicing, timely bill payments, expense tracking, and credit control to optimize cash flow and vendor/client relations.</p>
-                </div>
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M9 17v-6h13v6M9 11V7a4 4 0 018 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">AP & AR Management</h4>
+            <p class="text-gray-600 text-sm">Optimized cashflow processes, vendor payments and client invoicing with strong controls.</p>
+          </div>
 
-                <!-- Service Card 3: Payroll Administration -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
-                    <i data-lucide="dollar-sign" class="w-8 h-8 text-blue-700 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Payroll Management</h3>
-                    <p class="text-gray-600 text-sm">Handling complex payroll processing, tax withholdings, compliance reporting, and generating accurate employee pay stubs and summaries.</p>
-                </div>
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">Payroll Management</h4>
+            <p class="text-gray-600 text-sm">Full payroll processing, statutory compliance support and employee reporting.</p>
+          </div>
 
-                <!-- Service Card 4: Financial Reporting -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
-                    <i data-lucide="bar-chart-3" class="w-8 h-8 text-green-600 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Financial Reporting & Analysis</h3>
-                    <p class="text-gray-600 text-sm">Preparation of GAAP/IFRS compliant financial statements, month-end/year-end closing, and custom in-depth analytical reporting packages.</p>
-                </div>
-                
-                <!-- Service Card 5: Virtual CFO Services -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-blue-700">
-                    <i data-lucide="briefcase" class="w-8 h-8 text-blue-700 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Virtual CFO Services</h3>
-                    <p class="text-gray-600 text-sm">High-level financial planning, budgeting, forecasting, risk assessment, and strategic advisory to guide critical business decisions and drive growth.</p>
-                </div>
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">Financial Reporting & Analysis</h4>
+            <p class="text-gray-600 text-sm">GAAP/IFRS compliant statements, dashboards, KPI reporting and insights for strategic decisions.</p>
+          </div>
 
-                <!-- Service Card 6: Taxation and Compliance -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-green-500">
-                    <i data-lucide="cloud" class="w-8 h-8 text-green-600 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Taxation & Regulatory Compliance</h3>
-                    <p class="text-gray-600 text-sm">Tax preparation, filing, and meticulous planning support for various jurisdictions, ensuring full adherence to global and local regulatory requirements.</p>
-                </div>
-            </div>
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">Virtual CFO Services</h4>
+            <p class="text-gray-600 text-sm">Budgeting, forecasting, cash planning and strategic advisory to support growth and valuation.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4 class="text-xl font-semibold mb-2">Taxation & Compliance</h4>
+            <p class="text-gray-600 text-sm">Cross-jurisdiction tax filing support, planning and compliance controls for global clients.</p>
+          </div>
+
         </div>
+      </div>
     </section>
 
-    <!-- Approach Section -->
-    <section id="approach" class="py-20 sm:py-28 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-center mb-4 text-gray-900">
-                Our Proven <span class="text-gradient">3-Pillar Approach</span> to Global Outsourcing
-            </h2>
-            <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
-                Security, compliance, and communication are at the heart of our seamless service integration.
-            </p>
+    <!-- WHO WE SERVE -->
+    <section id="clients" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="text-3xl font-extrabold text-vas-blue mb-6">Who We Serve</h3>
+        <p class="text-gray-600 mb-10">We work with growing firms and businesses that need reliable, scalable accounting capacity without the hiring overhead.</p>
 
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <!-- Image for 3-Pillar Approach -->
-                <div class="mb-10 lg:mb-0 order-2 lg:order-1">
-                    <img src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=3-Pillar+Approach" 
-                         alt="Abstract illustration of three interconnected pillars representing security, compliance, and communication in a global network."
-                         class="rounded-xl shadow-2xl w-full h-auto object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1E3A8A/FFFFFF?text=3-Pillar+Approach'"
-                    >
-                </div>
-
-                <!-- Approach Details -->
-                <div class="order-1 lg:order-2">
-                    <div class="space-y-8">
-                        <!-- Pillar 1: Security -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="cloud" class="w-7 h-7 text-blue-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-semibold text-gray-900">Secure & Confidential Workflow</h4>
-                                <p class="text-gray-600">We utilize secure VPNs and cloud-based accounting platforms (QuickBooks, Xero, etc.) with strict data access protocols, ensuring client confidentiality and integrity.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Pillar 2: Partnership/Communication -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="phone" class="w-7 h-7 text-green-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-semibold text-gray-900">Dedicated Account Manager</h4>
-                                <p class="text-gray-600">You'll work with a single, experienced point of contact who manages the workflow and communication, providing clarity and accountability across all projects.</p>
-                            </div>
-                        </div>
-
-                        <!-- Pillar 3: Quality/Compliance -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="check-square" class="w-7 h-7 text-blue-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-semibold text-gray-900">Rigorous Quality Checks</h4>
-                                <p class="text-gray-600">Every deliverable undergoes a multi-level review by a senior CA/ACCA before it reaches your desk, guaranteeing accuracy and compliance with required standards.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="p-6 bg-gray-50 rounded-2xl shadow">
+            <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
+              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zM6 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
+            <h4 class="font-semibold mb-1">CPA & Accounting Firms</h4>
+            <p class="text-sm text-gray-600">Audit support, outsourced bookkeeping & recurring compliance to scale firm capacity.</p>
+          </div>
+
+          <div class="p-6 bg-gray-50 rounded-2xl shadow">
+            <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
+              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 11h18v10H3z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="font-semibold mb-1">Retail & eCommerce</h4>
+            <p class="text-sm text-gray-600">Inventory reconciliations, sales reporting and eCommerce platform integrations.</p>
+          </div>
+
+          <div class="p-6 bg-gray-50 rounded-2xl shadow">
+            <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
+              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3M20.49 9.37a9 9 0 11-6.24-6.24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="font-semibold mb-1">SaaS & Startups</h4>
+            <p class="text-sm text-gray-600">ARR tracking, KPI dashboards, monthly close and investor-ready reporting.</p>
+          </div>
+
+          <div class="p-6 bg-gray-50 rounded-2xl shadow">
+            <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
+              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18M3 14h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="font-semibold mb-1">S-Corps & SMEs</h4>
+            <p class="text-sm text-gray-600">Cost-effective bookkeeping and tax support for small businesses and S-corporations.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Value/Differentiators Section -->
-    <section id="value" class="py-20 sm:py-28 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center"> 
-                <!-- Left Column: Text Content -->
-                <div class="order-2 lg:order-1">
-                    <span class="text-sm font-semibold tracking-wider uppercase text-blue-700 mb-2 block">Core Differentiators</span>
-                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900">
-                        The Key to <span class="text-gradient">Operational Excellence</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-8">
-                        Choosing VAS Global Partners is a strategic decision that combines high-quality service with unmatched operational efficiency, allowing your firm to focus on client growth.
-                    </p>
-
-                    <div class="space-y-6">
-                        <!-- Differentiator 1: Vetted Talent -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="users" class="w-6 h-6 text-green-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Vetted Global Talent</h4>
-                                <p class="text-gray-500">Our professionals are highly vetted, English-proficient, and include qualified Chartered Accountants (CA) and ACCAs, rigorously trained in international standards (US GAAP, IFRS).</p>
-                            </div>
-                        </div>
-
-                        <!-- Differentiator 2: 24/7 Capability -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="clock" class="w-6 h-6 text-blue-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900">24/7 Service Capability</h4>
-                                <p class="text-gray-500">We leverage global time differences to ensure a consistent workflow, allowing us to complete tasks while your team focuses on client-facing work.</p>
-                            </div>
-                        </div>
-
-                        <!-- Differentiator 3: Precision & Partnership -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 pt-1">
-                                <i data-lucide="check-square" class="w-6 h-6 text-green-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900">Precision & Partnership</h4>
-                                <p class="text-gray-500">Our process emphasizes the "P's": Precision in data, unwavering Partnership with your firm, driving consistent Progress.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Image for Operational Excellence -->
-                <div class="mt-10 lg:mt-0 order-first lg:order-2 flex justify-center items-center">
-                    <img src="https://placehold.co/600x400/F3F4F6/1E3A8A?text=Operational+Excellence+Graphic" 
-                         alt="Illustrative image representing operational excellence, efficiency, or global collaboration."
-                         class="rounded-xl shadow-2xl w-full h-auto max-w-lg object-cover border border-gray-200 transform hover:scale-[1.01] transition duration-500 ease-in-out"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3F4F6/1E3A8A?text=Operational+Excellence+Graphic'"
-                    >
-                </div>
-            </div>
+    <!-- APPROACH -->
+    <section id="approach" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl font-extrabold text-vas-blue mb-4">Our Proven 3-Pillar Approach</h3>
+          <p class="text-gray-600">Security, compliance and communication are at the core of our delivery model.</p>
         </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-blue text-white">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 11c0 .88-.39 1.67-1 2.22M12 11c0 .88.39 1.67 1 2.22M12 11V7" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2">Secure & Confidential Workflow</h4>
+            <p class="text-gray-600 text-sm">Encrypted cloud platforms, secure VPNs, role-based access and NDA-backed processes.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-green text-white">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2">Dedicated Account Manager</h4>
+            <p class="text-gray-600 text-sm">Single point of contact to manage workflows, communications and escalations.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow">
+            <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-blue text-white">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2">Rigorous Quality Checks</h4>
+            <p class="text-gray-600 text-sm">Multi-level review by senior CA/ACCA before deliverables are finalized.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 sm:py-28 bg-primary">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-            <h2 class="text-4xl font-extrabold text-center mb-4">Ready to Scale Your Firm?</h2>
-            <p class="text-xl text-center text-blue-200 mb-12">
-                Let’s discuss how outsourcing to VAS Global Partners can transform your operations.
-            </p>
-
-            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-2xl">
-                <form id="contact-form" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="John Doe">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
-                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="name@firm.com">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
-                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-gray-900" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full flex justify-center items-center py-3 border border-transparent text-base font-medium rounded-lg text-white cta-button bg-secondary">
-                        Send Consultation Request
-                    </button>
-                    
-                    <p id="success-message" class="text-center text-sm font-semibold text-green-600 hidden">
-                        Thank you! We have received your request and will be in touch shortly.
-                    </p>
-                </form>
-            </div>
+    <!-- CONTACT / CALENDLY -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-extrabold text-vas-blue">Ready to Scale Your Firm?</h3>
+          <p class="text-gray-600 mt-3">Let’s discuss how outsourcing to VAS Global Partners can transform your operations.</p>
         </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <!-- Calendly -->
+          <div>
+            <div class="rounded-xl overflow-hidden shadow-lg">
+              <!-- Replace with your Calendly link if different -->
+              <iframe src="https://calendly.com/vasglobalpartners/intro-call" width="100%" height="630" frameborder="0" title="Schedule with VAS Global Partners" loading="lazy"></iframe>
+            </div>
+            <p class="text-xs text-gray-500 mt-3 text-center">Prefer email? We’ll respond via the contact form.</p>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+            <form id="contactForm" class="space-y-4" novalidate>
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input id="name" name="name" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="Jane Doe">
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
+                <input id="email" name="email" type="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="name@firm.com">
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                <input id="company" name="company" type="text" class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="Company name (optional)">
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-3 rounded-lg bg-vas-blue text-white font-semibold hover:bg-vas-blue/95">Send Consultation Request</button>
+              </div>
+
+              <p id="form-success" class="hidden text-sm font-semibold text-green-600 text-center">✅ Thank you! We have received your request and will be in touch shortly.</p>
+              <p class="text-xs text-gray-500 mt-2 text-center">We respect your privacy. Your data is secure and will not be shared.</p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                
-                <!-- Footer Column 1: Logo/Brand -->
-                <div class="col-span-2 md:col-span-1">
-                    <span class="text-xl font-bold text-white">VAS Global Partners</span>
-                    <p class="mt-4 text-sm text-gray-400">Precision. Partnership. Progress.</p>
-                </div>
-
-                <!-- Footer Column 2: Navigation -->
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigate</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#about" class="text-base text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#services" class="text-base text-gray-400 hover:text-white">Services</a></li>
-                        <li><a href="#approach" class="text-base text-gray-400 hover:text-white">Our Approach</a></li>
-                        <li><a href="#value" class="text-base text-gray-400 hover:text-white">The Advantage</a></li>
-                    </ul>
-                </div>
-
-                <!-- Footer Column 3: Contact Details -->
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li class="flex items-center space-x-3">
-                            <i data-lucide="phone" class="w-4 h-4 text-green-500"></i>
-                            <a href="tel:+977981234567899" class="text-base text-gray-400 hover:text-white">+977 981234567899</a>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <i data-lucide="mail" class="w-4 h-4 text-green-500"></i>
-                            <a href="mailto:info@vasglobalpartners.com" class="text-base text-gray-400 hover:text-white">info@vasglobalpartners.com</a>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-green-500 mt-1"></i>
-                            <span class="text-base text-gray-400">Kathmandu, Nepal (Operations Hub)</span>
-                        </li>
-                    </ul>
-                </div>
-
-                 <!-- Footer Column 4: Social Media -->
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
-                    <div class="mt-4 flex space-x-4">
-                        <!-- Facebook Placeholder -->
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.4l.6-3h-3v-1.9c0-.8.3-1.5 1.5-1.5h1.6V5.4c-.3-.1-1.3-.3-2.5-.3-2.6 0-4.3 1.6-4.3 4.5v2.7h-3V13.5h3v8.5c0 .3.2.5.5.5h3c.3 0 .5-.2.5-.5v-8.5z"/></svg>
-                        </a>
-                        <!-- Twitter Placeholder -->
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.6.8-2.5 1-.8-.8-1.9-1.3-3.1-1.3-2.4 0-4.3 1.9-4.3 4.3 0 .3 0 .7.1 1-.4-.1-.8-.2-1.2-.4-3.5-1.8-5.9-4.7-7.7-7.8-.4.7-.6 1.4-.6 2.2 0 1.5.8 2.8 2 3.5-.7 0-1.4-.2-2-.5v.1c0 2 1.4 3.7 3.2 4-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2 2.7 3.8 2.7-1.5 1.2-3.4 1.9-5.5 1.9-.3 0-.6 0-.8-.1 1.9 1.2 4.1 1.9 6.5 1.9 7.8 0 12.1-6.4 12.1-12.1 0-.2 0-.4 0-.6.8-.5 1.4-1.2 1.8-1.9z"/></svg>
-                        </a>
-                        <!-- LinkedIn Placeholder -->
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 0h-15C2 0 0 2 0 4.5v15C0 22 2 24 4.5 24h15c2.5 0 4.5-2 4.5-4.5v-15C24 2 22 0 19.5 0zM7 20h-3v-9h3v9zm5.5-11.5c-1.3 0-2.2-.9-2.2-2.1 0-1.2.9-2.1 2.2-2.1 1.3 0 2.2.9 2.2 2.1 0 1.2-.9 2.1-2.2 2.1zm4.5 11.5h-3v-5c0-1.2-.7-1.9-1.8-1.9-1.1 0-1.8.7-1.8 1.9v5h-3v-9h3v1.3c.5-.7 1.3-1.3 2.5-1.3 1.9 0 3.2 1.2 3.2 3.7v5.3z"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Copyright -->
-            <div class="mt-12 border-t border-gray-800 pt-8">
-                <p class="text-base text-gray-500 text-center">
-                    &copy; 2025 VAS Global Partners. All rights reserved.
-                </p>
-            </div>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="text-lg font-bold">VAS Global Partners</div>
+          <p class="text-sm text-gray-300 mt-3">Precision. Partnership. Progress.</p>
         </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Navigate</h4>
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#services" class="hover:text-white">Services</a></li>
+            <li><a href="#clients" class="hover:text-white">Who We Serve</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Contact</h4>
+          <p class="text-sm text-gray-300">Email: <span class="text-gray-100">info@vasglobalpartners.com</span></p>
+          <p class="text-sm text-gray-300 mt-1">Phone: <span class="text-gray-100">+977 9812345678</span></p>
+          <p class="text-sm text-gray-300 mt-2">Kathmandu, Nepal (Operations Hub)</p>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+        &copy; 2025 VAS Global Partners. All rights reserved.
+      </div>
     </footer>
+  </main>
 
-    <!-- JavaScript for interactivity -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const contactForm = document.getElementById('contact-form');
-            const successMessage = document.getElementById('success-message');
+  <!-- FLOATING WHATSAPP CTA -->
+  <a class="whatsapp-float" href="https://wa.me/9779812345678?text=Hello%20VAS%20Global%20Partners%2C%20I%20would%20like%20to%20learn%20about%20your%20outsourcing%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <div class="h-14 w-14 bg-vas-green rounded-full flex items-center justify-center text-white shadow-lg">
+      <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none"><path d="M21 11.5C21 16.194 16.97 20 12.5 20c-1.5 0-2.9-.36-4.14-1L3 20l1.17-4.96C3.05 13.57 2 12.09 2 10.5 2 6.36 5.58 3 10 3S21 6.36 21 10.5z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 11.5c.4.7 1.3 1.6 3 2.2 1.7.6 2.9.6 3.8.2.9-.4 1.3-1.3 1.5-1.6.2-.3.1-.5 0-.7-.1-.2-.6-.6-1.2-1.1-.6-.5-.9-.8-1.2-1-.3-.2-.6-.2-.9-.1-.3.2-.9.6-1 1-.1.4-.1.8.2 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </a>
 
-            // 1. Mobile Menu Toggle
-            menuButton.addEventListener('click', () => {
-                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-                menuButton.setAttribute('aria-expanded', !isExpanded);
-                mobileMenu.classList.toggle('hidden');
-            });
+  <!-- SCRIPTS -->
+  <script>
+    // lucide icons
+    if (window.lucide) { lucide.createIcons(); }
 
-            // Close mobile menu on link click
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    menuButton.setAttribute('aria-expanded', 'false');
-                });
-            });
+    // Header shrink on scroll
+    const header = document.getElementById('site-header');
+    const threshold = 64;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > threshold) {
+        header.classList.add('header-small', 'bg-white/95', 'backdrop-blur-sm');
+        header.classList.remove('header-large');
+      } else {
+        header.classList.add('header-large');
+        header.classList.remove('header-small', 'bg-white/95', 'backdrop-blur-sm');
+      }
+    });
 
-            // 2. Simple Form Submission Handling (Placeholder)
-            contactForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                // In a real application, this is where you would send data to a backend server.
-                console.log('Form submission simulated.'); 
-                
-                // Show success message and clear form
-                successMessage.classList.remove('hidden');
-                contactForm.reset();
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
 
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.classList.add('hidden');
-                }, 5000);
-            });
-        });
-    </script>
+    menuToggle.addEventListener('click', () => {
+      const hidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+      menuToggle.setAttribute('aria-expanded', String(!hidden));
+    });
 
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuOpen.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Contact form handling (placeholder)
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('form-success');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // TODO: Replace this client-side simulation with real endpoint:
+      // Example: fetch('/api/contact', { method: 'POST', body: new FormData(contactForm) })
+      contactForm.reset();
+      formSuccess.classList.remove('hidden');
+
+      // Optionally open Calendly for immediate scheduling:
+      // window.open('https://calendly.com/vasglobalpartners/intro-call', '_blank');
+
+      setTimeout(() => {
+        formSuccess.classList.add('hidden');
+      }, 8000);
+    });
+
+    // Accessibility: close mobile menu with Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        menuOpen.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
 </body>
 </html>
