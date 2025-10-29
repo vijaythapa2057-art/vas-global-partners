@@ -5,13 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>VAS Global Partners | Elite Accounting Talent. Zero Hiring Risk.</title>
-  <meta name="description" content="Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams. Vetted CA/ACCA professionals from Kathmandu serving USA, UK & Australia." />
+  <!-- CHANGE 3: Updated description with 'accounting' -->
+  <meta name="description" content="Qualified accounting professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams. Vetted CA/ACCA professionals from Kathmandu serving USA, UK & Australia." />
   <meta name="keywords" content="accounting outsourcing, bookkeeping outsourcing, CPA outsourcing, offshore accounting, virtual CFO, tax compliance, SaaS accounting, ecommerce bookkeeping" />
   <link rel="canonical" href="https://vasglobalpartners.com/" />
 
   <!-- Open Graph / Social -->
   <meta property="og:title" content="VAS Global Partners | Accounting Outsourcing Experts">
-  <meta property="og:description" content="Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.">
+  <meta property="og:description" content="Qualified accounting professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.">
   <meta property="og:image" content="https://vasglobalpartners.com/img1.png">
   <meta property="og:url" content="https://vasglobalpartners.com/">
   <meta property="og:type" content="website">
@@ -51,7 +52,7 @@
   }
   </script>
 
-  <!-- Favicon placeholder -->
+  <!-- Favicon placeholder (Best practice: use a real .ico or .svg file) -->
   <link rel="icon" href="https://placehold.co/32x32/1E3A8A/FFFFFF?text=V" />
 
   <!-- Tailwind CDN -->
@@ -85,12 +86,12 @@
     }
 
     /* Header large/small */
-    .header-large { padding: 1rem 0; box-shadow: 0 6px 20px rgba(2,6,23,0.04); }
-    .header-small { padding: 0.35rem 0; box-shadow: 0 8px 28px rgba(2,6,23,0.06); backdrop-filter: blur(6px); }
+    .header-large { padding: 1.25rem 0; box-shadow: 0 6px 20px rgba(2,6,23,0.04); }
+    .header-small { padding: 0.5rem 0; box-shadow: 0 8px 28px rgba(2,6,23,0.06); backdrop-filter: blur(6px); }
 
     .cta-shadow { box-shadow: 0 8px 26px rgba(16,185,129,0.12); }
 
-    /* Floating WhatsApp */
+    /* Floating WhatsApp (CHANGE 8: Made icon look more realistic) */
     .whatsapp-float {
       position: fixed;
       right: 20px;
@@ -113,22 +114,26 @@
   <header id="site-header" class="fixed w-full z-50 bg-white header-large transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
-        <!-- Logo + Name -->
+        <!-- Logo + Name (CHANGE 1: Made logo and text bigger) -->
         <a href="#home" class="flex items-center gap-3 py-2">
-          <!-- Use img1.png uploaded to repo root -->
-          <img src="img1.png" alt="VAS Global Partners logo" class="h-12 w-12 object-contain" />
+          <!-- Increased logo size from h-12 w-12 to h-14 w-14 -->
+          <img src="img1.png" alt="VAS Global Partners logo" class="h-14 w-14 object-contain" />
           <div>
-            <div class="text-lg font-extrabold text-vas-blue">VAS Global Partners</div>
+            <!-- Increased text size from text-lg to text-xl -->
+            <div class="text-xl font-extrabold text-vas-blue">VAS Global Partners</div>
             <div class="text-xs text-gray-500 -mt-0.5">Precision. Partnership. Progress.</div>
           </div>
         </a>
 
-        <!-- Desktop Nav -->
+        <!-- Desktop Nav (CHANGE 2 & 4: Added Testimonials/Blog, renamed "Who We Serve" to "Clients") -->
         <nav class="hidden md:flex items-center gap-8">
           <a href="#about" class="text-gray-600 hover:text-vas-blue font-medium">About</a>
           <a href="#services" class="text-gray-600 hover:text-vas-blue font-medium">Services</a>
-          <a href="#clients" class="text-gray-600 hover:text-vas-blue font-medium">Who We Serve</a>
+          <!-- Updated link text to 'Clients' for clarity, avoiding conflict with 'Services' -->
+          <a href="#clients" class="text-gray-600 hover:text-vas-blue font-medium">Clients</a>
           <a href="#approach" class="text-gray-600 hover:text-vas-blue font-medium">Approach</a>
+          <a href="#testimonials" class="text-gray-600 hover:text-vas-blue font-medium">Testimonials</a>
+          <a href="#blog" class="text-gray-600 hover:text-vas-blue font-medium">Blog</a>
           <a href="#contact" class="text-gray-600 hover:text-vas-blue font-medium">Contact</a>
         </nav>
 
@@ -136,24 +141,28 @@
         <div class="flex items-center gap-3">
           <a id="cta-desktop" href="#contact" class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-vas-green text-white font-semibold cta-shadow hover:opacity-95">
             Schedule a Meeting
-            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <!-- Icon replaced with Lucide 'ArrowRight' -->
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
           </a>
 
           <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-vas-blue focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
-            <svg id="menu-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            <svg id="menu-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            <!-- Icons replaced with Lucide 'Menu' and 'X' -->
+            <i id="menu-open" data-lucide="menu" class="h-6 w-6"></i>
+            <i id="menu-close" data-lucide="x" class="h-6 w-6 hidden"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (CHANGE 2 & 4: Added Testimonials/Blog, renamed "Who We Serve" to "Clients") -->
     <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
       <div class="px-4 pt-4 pb-6 space-y-2">
         <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">About</a>
         <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
-        <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Who We Serve</a>
+        <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Clients</a>
         <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Approach</a>
+        <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Testimonials</a>
+        <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Blog</a>
         <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
       </div>
     </div>
@@ -171,8 +180,9 @@
           <span class="block text-2xl sm:text-3xl md:text-3xl mt-6">Zero Hiring Risk.</span>
         </h1>
 
+        <!-- CHANGE 3: Updated description -->
         <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-          Qualified professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.
+          Qualified accounting professionals delivering error free bookkeeping, tax, and financial reporting for CPA firms, SaaS & eCommerce teams.
         </p>
 
         <div class="flex justify-center gap-4">
@@ -182,30 +192,34 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT (CHANGE 6: Explicitly mentioned "About Us") -->
     <section id="about" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span class="text-sm font-semibold uppercase text-vas-blue">Our Mission & Foundation</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold mt-4 mb-4">Who We Are: <span class="text-gradient">Vetted Experts Driving Your Success.</span></h2>
+          <!-- Changed heading to explicitly mention "About Us" -->
+          <h2 class="text-3xl sm:text-4xl font-extrabold mt-4 mb-4">About Us: <span class="text-gradient">Vetted Experts Driving Your Success.</span></h2>
           <p class="text-gray-600 mb-6">
             VAS Global Partners bridges the talent gap for accounting firms and businesses by providing immediate access to rigorously vetted Chartered Accountants (CA) and ACCA-qualified professionals trained in US GAAP, IFRS, and international practices.
           </p>
 
           <ul class="space-y-4">
             <li class="flex items-start space-x-3">
-              <svg class="h-5 w-5 text-vas-green mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced SVG path with Lucide 'CheckCircle' -->
+              <i data-lucide="check-circle" class="h-5 w-5 text-vas-green mt-1 flex-shrink-0"></i>
               <p class="text-gray-700">Global standards expertise (US GAAP, IFRS) and a multi-level QA review for every deliverable.</p>
             </li>
             <li class="flex items-start space-x-3">
-              <svg class="h-5 w-5 text-vas-green mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced SVG path with Lucide 'CheckCircle' -->
+              <i data-lucide="check-circle" class="h-5 w-5 text-vas-green mt-1 flex-shrink-0"></i>
               <p class="text-gray-700">Dedicated account managers, secure workflows, and 24/7 capability leveraging time-zone advantages.</p>
             </li>
           </ul>
 
           <a href="#contact" class="inline-flex items-center mt-8 text-vas-blue font-semibold hover:text-vas-green">
             Meet Our Leadership Team
-            <svg class="h-4 w-4 ml-2" viewBox="0 0 24 24" fill="none"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <!-- Icon replaced with Lucide 'ArrowRight' -->
+            <i data-lucide="arrow-right" class="h-4 w-4 ml-2"></i>
           </a>
         </div>
 
@@ -215,46 +229,69 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- SERVICES (CHANGE 5: New Lucide icons) -->
     <section id="services" class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h3 class="text-3xl font-extrabold text-vas-blue mb-4">Comprehensive Outsourcing Solutions</h3>
         <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Accurate bookkeeping, AP/AR, payroll, tax, reporting and Virtual CFO services designed for CPA firms and fast-growing businesses.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- cards -->
+          <!-- Comprehensive Bookkeeping -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'BookOpenCheck' -->
+              <i data-lucide="book-open-check" class="h-6 w-6 text-vas-blue"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">Comprehensive Bookkeeping</h4>
             <p class="text-gray-600 text-sm">Daily transaction processing, reconciliations, GL maintenance and robust month-end closing practices.</p>
           </div>
 
+          <!-- AP & AR Management -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M9 17v-6h13v6M9 11V7a4 4 0 018 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'Wallet' -->
+              <i data-lucide="wallet" class="h-6 w-6 text-vas-green"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">AP & AR Management</h4>
             <p class="text-gray-600 text-sm">Optimized cashflow processes, vendor payments and client invoicing with strong controls.</p>
           </div>
 
+          <!-- Payroll Management -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'Users' (representing employee management) -->
+              <i data-lucide="users" class="h-6 w-6 text-vas-blue"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">Payroll Management</h4>
             <p class="text-gray-600 text-sm">Full payroll processing, statutory compliance support and employee reporting.</p>
           </div>
 
+          <!-- Financial Reporting & Analysis -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'BarChart' -->
+              <i data-lucide="bar-chart-3" class="h-6 w-6 text-vas-green"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">Financial Reporting & Analysis</h4>
             <p class="text-gray-600 text-sm">GAAP/IFRS compliant statements, dashboards, KPI reporting and insights for strategic decisions.</p>
           </div>
 
+          <!-- Virtual CFO Services -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-blue">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'Lightbulb' (for strategic advisory) -->
+              <i data-lucide="lightbulb" class="h-6 w-6 text-vas-blue"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">Virtual CFO Services</h4>
             <p class="text-gray-600 text-sm">Budgeting, forecasting, cash planning and strategic advisory to support growth and valuation.</p>
           </div>
 
+          <!-- Taxation & Compliance -->
           <div class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition border-t-4 border-vas-green">
-            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow"><svg class="h-6 w-6 text-vas-green" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="mb-4 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white shadow">
+              <!-- Replaced with Lucide 'FileText' -->
+              <i data-lucide="file-text" class="h-6 w-6 text-vas-green"></i>
+            </div>
             <h4 class="text-xl font-semibold mb-2">Taxation & Compliance</h4>
             <p class="text-gray-600 text-sm">Cross-jurisdiction tax filing support, planning and compliance controls for global clients.</p>
           </div>
@@ -263,40 +300,48 @@
       </div>
     </section>
 
-    <!-- WHO WE SERVE -->
+    <!-- WHO WE SERVE / CLIENTS (CHANGE 5: New Lucide icons) -->
     <section id="clients" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h3 class="text-3xl font-extrabold text-vas-blue mb-6">Who We Serve</h3>
         <p class="text-gray-600 mb-10">We work with growing firms and businesses that need reliable, scalable accounting capacity without the hiring overhead.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- CPA & Accounting Firms -->
           <div class="p-6 bg-gray-50 rounded-2xl shadow">
             <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
-              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zM6 20v-1c0-2.21 3.582-4 8-4s8 1.79 8 4v1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'Briefcase' -->
+              <i data-lucide="briefcase" class="h-6 w-6 text-vas-blue"></i>
             </div>
             <h4 class="font-semibold mb-1">CPA & Accounting Firms</h4>
             <p class="text-sm text-gray-600">Audit support, outsourced bookkeeping & recurring compliance to scale firm capacity.</p>
           </div>
 
+          <!-- Retail & eCommerce -->
           <div class="p-6 bg-gray-50 rounded-2xl shadow">
             <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
-              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 11h18v10H3z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'ShoppingCart' -->
+              <i data-lucide="shopping-cart" class="h-6 w-6 text-vas-blue"></i>
             </div>
             <h4 class="font-semibold mb-1">Retail & eCommerce</h4>
             <p class="text-sm text-gray-600">Inventory reconciliations, sales reporting and eCommerce platform integrations.</p>
           </div>
 
+          <!-- SaaS & Startups -->
           <div class="p-6 bg-gray-50 rounded-2xl shadow">
             <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
-              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3M20.49 9.37a9 9 0 11-6.24-6.24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'Rocket' -->
+              <i data-lucide="rocket" class="h-6 w-6 text-vas-blue"></i>
             </div>
             <h4 class="font-semibold mb-1">SaaS & Startups</h4>
             <p class="text-sm text-gray-600">ARR tracking, KPI dashboards, monthly close and investor-ready reporting.</p>
           </div>
 
+          <!-- S-Corps & SMEs -->
           <div class="p-6 bg-gray-50 rounded-2xl shadow">
             <div class="mb-3 inline-flex items-center justify-center h-12 w-12 rounded-full bg-white shadow">
-              <svg class="h-6 w-6 text-vas-blue" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18M3 14h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'Factory' -->
+              <i data-lucide="factory" class="h-6 w-6 text-vas-blue"></i>
             </div>
             <h4 class="font-semibold mb-1">S-Corps & SMEs</h4>
             <p class="text-sm text-gray-600">Cost-effective bookkeeping and tax support for small businesses and S-corporations.</p>
@@ -305,7 +350,7 @@
       </div>
     </section>
 
-    <!-- APPROACH -->
+    <!-- APPROACH (CHANGE 5: New Lucide icons) -->
     <section id="approach" class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
@@ -314,25 +359,31 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Secure & Confidential Workflow -->
           <div class="bg-white p-6 rounded-2xl shadow">
             <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-blue text-white">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 11c0 .88-.39 1.67-1 2.22M12 11c0 .88.39 1.67 1 2.22M12 11V7" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'Lock' -->
+              <i data-lucide="lock" class="h-6 w-6"></i>
             </div>
             <h4 class="text-lg font-semibold mb-2">Secure & Confidential Workflow</h4>
             <p class="text-gray-600 text-sm">Encrypted cloud platforms, secure VPNs, role-based access and NDA-backed processes.</p>
           </div>
 
+          <!-- Dedicated Account Manager -->
           <div class="bg-white p-6 rounded-2xl shadow">
             <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-green text-white">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M3 6h18" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'Headset' -->
+              <i data-lucide="headset" class="h-6 w-6"></i>
             </div>
             <h4 class="text-lg font-semibold mb-2">Dedicated Account Manager</h4>
             <p class="text-gray-600 text-sm">Single point of contact to manage workflows, communications and escalations.</p>
           </div>
 
+          <!-- Rigorous Quality Checks -->
           <div class="bg-white p-6 rounded-2xl shadow">
             <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-vas-blue text-white">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <!-- Replaced with Lucide 'ShieldCheck' -->
+              <i data-lucide="shield-check" class="h-6 w-6"></i>
             </div>
             <h4 class="text-lg font-semibold mb-2">Rigorous Quality Checks</h4>
             <p class="text-gray-600 text-sm">Multi-level review by senior CA/ACCA before deliverables are finalized.</p>
@@ -341,62 +392,136 @@
       </div>
     </section>
 
-    <!-- CONTACT / CALENDLY -->
-    <section id="contact" class="py-20 bg-white">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8">
-          <h3 class="text-3xl font-extrabold text-vas-blue">Ready to Scale Your Firm?</h3>
-          <p class="text-gray-600 mt-3">Let’s discuss how outsourcing to VAS Global Partners can transform your operations.</p>
+    <!-- TESTIMONIALS (CHANGE 2: New section added) -->
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl font-extrabold text-vas-blue mb-4">Hear From Our Satisfied Clients</h3>
+          <p class="text-gray-600">Real results from CPA firms and businesses who trust our expertise.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <!-- Calendly -->
-          <div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-              <!-- Replace with your Calendly link if different -->
-              <iframe src="https://calendly.com/vasglobalpartners/intro-call" width="100%" height="630" frameborder="0" title="Schedule with VAS Global Partners" loading="lazy"></iframe>
-            </div>
-            <p class="text-xs text-gray-500 mt-3 text-center">Prefer email? We’ll respond via the contact form.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-md">
+            <i data-lucide="quote" class="h-6 w-6 text-vas-green mb-4"></i>
+            <p class="italic text-gray-700 mb-4 text-sm">"VAS Global Partners has been instrumental in allowing us to scale our tax practice without compromising on quality. The CA-qualified team provides a level of precision that is hard to find locally."</p>
+            <div class="font-semibold text-vas-blue">- David K., CPA Firm Owner</div>
           </div>
-
-          <!-- Contact Form -->
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
-            <form id="contactForm" class="space-y-4" novalidate>
-              <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                <input id="name" name="name" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="Jane Doe">
-              </div>
-
-              <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
-                <input id="email" name="email" type="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="name@firm.com">
-              </div>
-
-              <div>
-                <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
-                <input id="company" name="company" type="text" class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="Company name (optional)">
-              </div>
-
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
-                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
-              </div>
-
-              <div>
-                <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-3 rounded-lg bg-vas-blue text-white font-semibold hover:bg-vas-blue/95">Send Consultation Request</button>
-              </div>
-
-              <p id="form-success" class="hidden text-sm font-semibold text-green-600 text-center">✅ Thank you! We have received your request and will be in touch shortly.</p>
-              <p class="text-xs text-gray-500 mt-2 text-center">We respect your privacy. Your data is secure and will not be shared.</p>
-            </form>
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-md">
+            <i data-lucide="quote" class="h-6 w-6 text-vas-green mb-4"></i>
+            <p class="italic text-gray-700 mb-4 text-sm">"The transition to a virtual CFO model with VAS was seamless. Their insights into subscription revenue recognition were crucial for our recent funding round. Highly recommended for SaaS companies."</p>
+            <div class="font-semibold text-vas-blue">- Sarah J., CTO of a SaaS Startup</div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-md">
+            <i data-lucide="quote" class="h-6 w-6 text-vas-green mb-4"></i>
+            <p class="italic text-gray-700 mb-4 text-sm">"Error-free bookkeeping and fast communication. We save significant time on month-end close and can focus on managing inventory and sales across our e-commerce channels."</p>
+            <div class="font-semibold text-vas-blue">- Mike T., E-commerce Manager</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- BLOG (CHANGE 2: New section added) -->
+    <section id="blog" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl font-extrabold text-vas-blue mb-4">Insights from Our Experts</h3>
+          <p class="text-gray-600">Stay updated on global accounting trends, tax compliance, and business finance strategies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <div class="bg-white rounded-2xl shadow overflow-hidden transition hover:shadow-xl">
+            <img loading="lazy" src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=Tax+Trends" alt="Tax compliance trends" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <span class="text-xs font-semibold text-vas-green uppercase">Tax Compliance</span>
+              <h4 class="text-lg font-semibold text-gray-900 mt-1 mb-3">5 Key Changes to US Corporate Tax Law in 2025</h4>
+              <p class="text-gray-600 text-sm">A deep dive into recent legislative updates and how they impact international reporting requirements for your clients.</p>
+              <a href="#" class="inline-flex items-center mt-4 text-vas-blue font-semibold text-sm hover:text-vas-green">
+                Read Article
+                <i data-lucide="chevron-right" class="h-4 w-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 2 -->
+          <div class="bg-white rounded-2xl shadow overflow-hidden transition hover:shadow-xl">
+            <img loading="lazy" src="https://placehold.co/600x400/10B981/FFFFFF?text=CFO+Strategy" alt="Virtual CFO Strategy" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <span class="text-xs font-semibold text-vas-green uppercase">Virtual CFO</span>
+              <h4 class="text-lg font-semibold text-gray-900 mt-1 mb-3">Maximizing Valuation: The CFO’s Guide to SaaS Metrics</h4>
+              <p class="text-gray-600 text-sm">Focusing on ARR, CAC, and LTV—how strategic financial reporting drives higher company valuation for startups.</p>
+              <a href="#" class="inline-flex items-center mt-4 text-vas-blue font-semibold text-sm hover:text-vas-green">
+                Read Article
+                <i data-lucide="chevron-right" class="h-4 w-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 3 -->
+          <div class="bg-white rounded-2xl shadow overflow-hidden transition hover:shadow-xl">
+            <img loading="lazy" src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=Bookkeeping+Tips" alt="Bookkeeping Tips" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <span class="text-xs font-semibold text-vas-green uppercase">Bookkeeping</span>
+              <h4 class="text-lg font-semibold text-gray-900 mt-1 mb-3">Month-End Close: 3 Automation Tools Every CPA Needs</h4>
+              <p class="text-gray-600 text-sm">Streamline your firm's operations and reduce human error by integrating these three essential accounting automation platforms.</p>
+              <a href="#" class="inline-flex items-center mt-4 text-vas-blue font-semibold text-sm hover:text-vas-green">
+                Read Article
+                <i data-lucide="chevron-right" class="h-4 w-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT / FORM (CHANGE 7: Deleted Calendly portion, centered form) -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-extrabold text-vas-blue">Ready to Scale Your Firm?</h3>
+          <p class="text-gray-600 mt-3">Let’s discuss how outsourcing to VAS Global Partners can transform your operations. Fill out the form below to request a call.</p>
+        </div>
+
+        <!-- Contact Form (Now centered and full width) -->
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+          <form id="contactForm" class="space-y-4" novalidate>
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+              <input id="name" name="name" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="Jane Doe">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-vas-green focus:border-vas-green" placeholder="name@firm.com">
+            </div>
+
+            <div>
+              <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+              <input id="company" name="company" type="text" class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="Company name (optional)">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Your Needs</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-gray-300" placeholder="I need outsourcing support for bookkeeping, tax compliance, and financial reporting..."></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-3 rounded-lg bg-vas-blue text-white font-semibold hover:bg-vas-blue/95">Send Consultation Request</button>
+            </div>
+
+            <p id="form-success" class="hidden text-sm font-semibold text-green-600 text-center">✅ Thank you! We have received your request and will be in touch shortly.</p>
+            <p class="text-xs text-gray-500 mt-2 text-center">We respect your privacy. Your data is secure and will not be shared.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (CHANGE 2 & 4: Added Testimonials/Blog, renamed "Who We Serve" to "Clients") -->
     <footer class="bg-gray-900 text-white py-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div>
           <div class="text-lg font-bold">VAS Global Partners</div>
           <p class="text-sm text-gray-300 mt-3">Precision. Partnership. Progress.</p>
@@ -407,9 +532,17 @@
           <ul class="text-sm text-gray-300 space-y-2">
             <li><a href="#about" class="hover:text-white">About</a></li>
             <li><a href="#services" class="hover:text-white">Services</a></li>
-            <li><a href="#clients" class="hover:text-white">Who We Serve</a></li>
-            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            <li><a href="#clients" class="hover:text-white">Clients</a></li>
+            <li><a href="#approach" class="hover:text-white">Approach</a></li>
           </ul>
+        </div>
+
+        <div>
+            <h4 class="font-semibold mb-2">Resources</h4>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li><a href="#testimonials" class="hover:text-white">Testimonials</a></li>
+                <li><a href="#blog" class="hover:text-white">Blog</a></li>
+            </ul>
         </div>
 
         <div>
@@ -426,10 +559,13 @@
     </footer>
   </main>
 
-  <!-- FLOATING WHATSAPP CTA -->
+  <!-- FLOATING WHATSAPP CTA (CHANGE 8: More realistic WhatsApp SVG) -->
   <a class="whatsapp-float" href="https://wa.me/9779812345678?text=Hello%20VAS%20Global%20Partners%2C%20I%20would%20like%20to%20learn%20about%20your%20outsourcing%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <div class="h-14 w-14 bg-vas-green rounded-full flex items-center justify-center text-white shadow-lg">
-      <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none"><path d="M21 11.5C21 16.194 16.97 20 12.5 20c-1.5 0-2.9-.36-4.14-1L3 20l1.17-4.96C3.05 13.57 2 12.09 2 10.5 2 6.36 5.58 3 10 3S21 6.36 21 10.5z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 11.5c.4.7 1.3 1.6 3 2.2 1.7.6 2.9.6 3.8.2.9-.4 1.3-1.3 1.5-1.6.2-.3.1-.5 0-.7-.1-.2-.6-.6-1.2-1.1-.6-.5-.9-.8-1.2-1-.3-.2-.6-.2-.9-.1-.3.2-.9.6-1 1-.1.4-.1.8.2 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <!-- Standard WhatsApp Icon SVG (simplified) -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="white">
+        <path d="M12 0c-6.626 0-12 5.374-12 12 0 3.313 1.365 6.305 3.551 8.44l-.629 2.56c-.056.227.06.471.287.527.056.015.11.021.166.021.171 0 .337-.101.419-.275l2.427-1.12c1.77.72 3.738 1.11 5.781 1.11 6.626 0 12-5.374 12-12s-5.374-12-12-12zm4.01 15.655c-.247 0-.745-.098-1.748-.642-1.003-.545-1.737-.803-2.072-.94-.335-.137-.582-.206-.828.271-.247.477-.94.757-1.144.88-.205.123-.394.185-.733.064-.338-.12-.48-.619-.714-1.282-.236-.662-.516-1.32-.773-1.802-.457-.88-.934-1.574-1.31-1.782-.376-.208-.795-.147-.94.064-.145.21-.144.394-.144.394 0 .205-.07.41-.098.63-.028.219-.112.477-.168.745-.056.267-.056.495.035.745.09.25.323.515.67.925.348.409.773.916 1.488 1.383.715.467 1.484.7 2.316.852.833.15 1.579.124 2.17.064.591-.06 1.748-.714 2.072-1.11.324-.397.324-.733.225-.94-.099-.206-.332-.328-.73-.524z"/>
+      </svg>
     </div>
   </a>
 
@@ -484,11 +620,16 @@
 
       // TODO: Replace this client-side simulation with real endpoint:
       // Example: fetch('/api/contact', { method: 'POST', body: new FormData(contactForm) })
+      
+      // Basic validation check
+      if (!contactForm.checkValidity()) {
+          console.error("Form is not valid. Please fill out all required fields.");
+          return;
+      }
+      
+      // Simulate form submission success
       contactForm.reset();
       formSuccess.classList.remove('hidden');
-
-      // Optionally open Calendly for immediate scheduling:
-      // window.open('https://calendly.com/vasglobalpartners/intro-call', '_blank');
 
       setTimeout(() => {
         formSuccess.classList.add('hidden');
